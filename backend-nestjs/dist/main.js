@@ -1,11 +1,26 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
+/***/ ((module) => {
 
-/***/ "./src/app.module.ts":
-/*!***************************!*\
-  !*** ./src/app.module.ts ***!
-  \***************************/
+module.exports = require("@nestjs/core");
+
+/***/ }),
+/* 2 */
+/***/ ((module) => {
+
+module.exports = require("@nestjs/common");
+
+/***/ }),
+/* 3 */
+/***/ ((module) => {
+
+module.exports = require("@nestjs/swagger");
+
+/***/ }),
+/* 4 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -17,12 +32,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AppModule = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const throttler_1 = __webpack_require__(/*! @nestjs/throttler */ "@nestjs/throttler");
-const auth_module_1 = __webpack_require__(/*! ./auth/auth.module */ "./src/auth/auth.module.ts");
-const health_module_1 = __webpack_require__(/*! ./health/health.module */ "./src/health/health.module.ts");
-const websocket_module_1 = __webpack_require__(/*! ./websocket/websocket.module */ "./src/websocket/websocket.module.ts");
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const throttler_1 = __webpack_require__(6);
+const auth_module_1 = __webpack_require__(7);
+const health_module_1 = __webpack_require__(24);
+const websocket_module_1 = __webpack_require__(26);
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -48,11 +63,52 @@ exports.AppModule = AppModule = __decorate([
 
 
 /***/ }),
+/* 5 */
+/***/ ((module) => {
 
-/***/ "./src/auth/auth.controller.ts":
-/*!*************************************!*\
-  !*** ./src/auth/auth.controller.ts ***!
-  \*************************************/
+module.exports = require("@nestjs/config");
+
+/***/ }),
+/* 6 */
+/***/ ((module) => {
+
+module.exports = require("@nestjs/throttler");
+
+/***/ }),
+/* 7 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AuthModule = void 0;
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const auth_controller_1 = __webpack_require__(8);
+const auth_service_1 = __webpack_require__(10);
+const prisma_service_1 = __webpack_require__(13);
+const jwt_service_1 = __webpack_require__(15);
+const email_service_1 = __webpack_require__(18);
+let AuthModule = class AuthModule {
+};
+exports.AuthModule = AuthModule;
+exports.AuthModule = AuthModule = __decorate([
+    (0, common_1.Module)({
+        imports: [config_1.ConfigModule],
+        controllers: [auth_controller_1.AuthController],
+        providers: [auth_service_1.AuthService, prisma_service_1.PrismaService, jwt_service_1.JWTService, email_service_1.EmailService],
+        exports: [auth_service_1.AuthService],
+    })
+], AuthModule);
+
+
+/***/ }),
+/* 8 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -71,15 +127,15 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AuthController = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const swagger_1 = __webpack_require__(/*! @nestjs/swagger */ "@nestjs/swagger");
-const throttler_1 = __webpack_require__(/*! @nestjs/throttler */ "@nestjs/throttler");
-const express_1 = __webpack_require__(/*! express */ "express");
-const auth_service_1 = __webpack_require__(/*! ./auth.service */ "./src/auth/auth.service.ts");
-const jwt_service_1 = __webpack_require__(/*! ../utils/jwt.service */ "./src/utils/jwt.service.ts");
-const auth_dto_1 = __webpack_require__(/*! ./dto/auth.dto */ "./src/auth/dto/auth.dto.ts");
-const response_dto_1 = __webpack_require__(/*! ./dto/response.dto */ "./src/auth/dto/response.dto.ts");
-const email_service_1 = __webpack_require__(/*! ../email/email.service */ "./src/email/email.service.ts");
+const common_1 = __webpack_require__(2);
+const swagger_1 = __webpack_require__(3);
+const throttler_1 = __webpack_require__(6);
+const express_1 = __webpack_require__(9);
+const auth_service_1 = __webpack_require__(10);
+const jwt_service_1 = __webpack_require__(15);
+const auth_dto_1 = __webpack_require__(20);
+const response_dto_1 = __webpack_require__(23);
+const email_service_1 = __webpack_require__(18);
 let AuthController = class AuthController {
     constructor(authService, emailService, jwtService) {
         this.authService = authService;
@@ -645,48 +701,13 @@ exports.AuthController = AuthController = __decorate([
 
 
 /***/ }),
+/* 9 */
+/***/ ((module) => {
 
-/***/ "./src/auth/auth.module.ts":
-/*!*********************************!*\
-  !*** ./src/auth/auth.module.ts ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AuthModule = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const auth_controller_1 = __webpack_require__(/*! ./auth.controller */ "./src/auth/auth.controller.ts");
-const auth_service_1 = __webpack_require__(/*! ./auth.service */ "./src/auth/auth.service.ts");
-const prisma_service_1 = __webpack_require__(/*! ../prisma/prisma.service */ "./src/prisma/prisma.service.ts");
-const jwt_service_1 = __webpack_require__(/*! ../utils/jwt.service */ "./src/utils/jwt.service.ts");
-const email_service_1 = __webpack_require__(/*! ../email/email.service */ "./src/email/email.service.ts");
-let AuthModule = class AuthModule {
-};
-exports.AuthModule = AuthModule;
-exports.AuthModule = AuthModule = __decorate([
-    (0, common_1.Module)({
-        imports: [config_1.ConfigModule],
-        controllers: [auth_controller_1.AuthController],
-        providers: [auth_service_1.AuthService, prisma_service_1.PrismaService, jwt_service_1.JWTService, email_service_1.EmailService],
-        exports: [auth_service_1.AuthService],
-    })
-], AuthModule);
-
+module.exports = require("express");
 
 /***/ }),
-
-/***/ "./src/auth/auth.service.ts":
-/*!**********************************!*\
-  !*** ./src/auth/auth.service.ts ***!
-  \**********************************/
+/* 10 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -702,14 +723,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var _a, _b, _c, _d;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AuthService = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const bcrypt = __webpack_require__(/*! bcryptjs */ "bcryptjs");
-const uuid_1 = __webpack_require__(/*! uuid */ "uuid");
-const prisma_service_1 = __webpack_require__(/*! ../prisma/prisma.service */ "./src/prisma/prisma.service.ts");
-const jwt_service_1 = __webpack_require__(/*! ../utils/jwt.service */ "./src/utils/jwt.service.ts");
-const verification_service_1 = __webpack_require__(/*! ../utils/verification.service */ "./src/utils/verification.service.ts");
-const email_service_1 = __webpack_require__(/*! ../email/email.service */ "./src/email/email.service.ts");
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const bcrypt = __webpack_require__(11);
+const uuid_1 = __webpack_require__(12);
+const prisma_service_1 = __webpack_require__(13);
+const jwt_service_1 = __webpack_require__(15);
+const verification_service_1 = __webpack_require__(17);
+const email_service_1 = __webpack_require__(18);
 let AuthService = class AuthService {
     constructor(prisma, jwtService, emailService, configService) {
         this.prisma = prisma;
@@ -1348,11 +1369,483 @@ exports.AuthService = AuthService = __decorate([
 
 
 /***/ }),
+/* 11 */
+/***/ ((module) => {
 
-/***/ "./src/auth/dto/auth.dto.ts":
-/*!**********************************!*\
-  !*** ./src/auth/dto/auth.dto.ts ***!
-  \**********************************/
+module.exports = require("bcryptjs");
+
+/***/ }),
+/* 12 */
+/***/ ((module) => {
+
+module.exports = require("uuid");
+
+/***/ }),
+/* 13 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var _a;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.PrismaService = void 0;
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const client_1 = __webpack_require__(14);
+let PrismaService = class PrismaService extends client_1.PrismaClient {
+    constructor(configService) {
+        super({
+            log: configService.get("NODE_ENV") === "development"
+                ? ["query", "error", "warn"]
+                : ["error"],
+        });
+        this.configService = configService;
+    }
+    async onModuleInit() {
+        try {
+            await this.$connect();
+            console.log("✅ Database connected successfully");
+        }
+        catch (error) {
+            console.error("❌ Database connection failed:", error);
+            throw error;
+        }
+    }
+    async onModuleDestroy() {
+        try {
+            await this.$disconnect();
+            console.log("✅ Database disconnected successfully");
+        }
+        catch (error) {
+            console.error("❌ Database disconnection failed:", error);
+            throw error;
+        }
+    }
+    async healthCheck() {
+        try {
+            await this.user.findFirst();
+            return true;
+        }
+        catch (error) {
+            console.error("❌ Database health check failed:", error);
+            return false;
+        }
+    }
+};
+exports.PrismaService = PrismaService;
+exports.PrismaService = PrismaService = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
+], PrismaService);
+
+
+/***/ }),
+/* 14 */
+/***/ ((module) => {
+
+module.exports = require("@prisma/client");
+
+/***/ }),
+/* 15 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var _a;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.JWTService = void 0;
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const jwt = __webpack_require__(16);
+let JWTService = class JWTService {
+    constructor(configService) {
+        this.configService = configService;
+    }
+    generateToken(payload) {
+        return jwt.sign(payload, this.configService.get("JWT_SECRET"), {
+            expiresIn: "15m",
+        });
+    }
+    generateRefreshToken(payload) {
+        return jwt.sign(payload, this.configService.get("JWT_REFRESH_SECRET"), {
+            expiresIn: "7d",
+        });
+    }
+    verifyToken(token) {
+        try {
+            if (!token) {
+                throw new Error("Token is required");
+            }
+            return jwt.verify(token, this.configService.get("JWT_SECRET"));
+        }
+        catch (error) {
+            if (error.name === "TokenExpiredError") {
+                throw new Error("Token has expired");
+            }
+            else if (error.name === "JsonWebTokenError") {
+                throw new Error("Invalid token format");
+            }
+            else if (error.message === "Token is required") {
+                throw error;
+            }
+            else {
+                throw new Error("Invalid or expired token");
+            }
+        }
+    }
+    verifyRefreshToken(token) {
+        try {
+            return jwt.verify(token, this.configService.get("JWT_REFRESH_SECRET"));
+        }
+        catch (error) {
+            throw new Error("Invalid or expired refresh token");
+        }
+    }
+    generateEmailVerificationToken(email) {
+        return jwt.sign({ email }, this.configService.get("EMAIL_VERIFICATION_SECRET"), {
+            expiresIn: "24h",
+        });
+    }
+    verifyEmailVerificationToken(token) {
+        try {
+            return jwt.verify(token, this.configService.get("EMAIL_VERIFICATION_SECRET"));
+        }
+        catch (error) {
+            throw new Error("Invalid or expired email verification token");
+        }
+    }
+    generatePasswordResetToken(email) {
+        return jwt.sign({ email }, this.configService.get("PASSWORD_RESET_SECRET"), {
+            expiresIn: "1h",
+        });
+    }
+    verifyPasswordResetToken(token) {
+        try {
+            return jwt.verify(token, this.configService.get("PASSWORD_RESET_SECRET"));
+        }
+        catch (error) {
+            throw new Error("Invalid or expired password reset token");
+        }
+    }
+};
+exports.JWTService = JWTService;
+exports.JWTService = JWTService = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
+], JWTService);
+
+
+/***/ }),
+/* 16 */
+/***/ ((module) => {
+
+module.exports = require("jsonwebtoken");
+
+/***/ }),
+/* 17 */
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.generateVerificationCode = generateVerificationCode;
+exports.getCodeExpiryTime = getCodeExpiryTime;
+exports.isCodeExpired = isCodeExpired;
+exports.isValidCodeFormat = isValidCodeFormat;
+function generateVerificationCode() {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+}
+function getCodeExpiryTime() {
+    return new Date(Date.now() + 15 * 60 * 1000);
+}
+function isCodeExpired(expiryDate) {
+    if (!expiryDate)
+        return true;
+    return new Date() > expiryDate;
+}
+function isValidCodeFormat(code) {
+    return /^\d{6}$/.test(code);
+}
+
+
+/***/ }),
+/* 18 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var _a;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EmailService = void 0;
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const nodemailer = __webpack_require__(19);
+let EmailService = class EmailService {
+    constructor(configService) {
+        this.configService = configService;
+        this.transporter = nodemailer.createTransport({
+            host: this.configService.get("SMTP_HOST"),
+            port: this.configService.get("SMTP_PORT"),
+            secure: this.configService.get("SMTP_PORT") === 465,
+            auth: {
+                user: this.configService.get("SMTP_USER"),
+                pass: this.configService.get("SMTP_PASS"),
+            },
+        });
+    }
+    async sendEmailVerification(email, token, firstName, verificationCode) {
+        const verificationUrl = `${this.configService.get("FRONTEND_URL")}/verify?token=${token}&type=email`;
+        const isCodeBased = !!verificationCode;
+        const verificationMethod = isCodeBased
+            ? `<div style="text-align: center; margin: 30px 0;">
+           <div style="background-color: #f8f9fa; border: 2px solid #EE3638; border-radius: 8px; padding: 20px; margin: 20px 0; display: inline-block;">
+             <h3 style="color: #EE3638; margin: 0 0 10px 0; font-size: 24px;">Your Verification Code</h3>
+             <div style="font-size: 32px; font-weight: bold; color: #111111; letter-spacing: 5px; font-family: 'Courier New', monospace;">${verificationCode}</div>
+             <p style="color: #666666; font-size: 14px; margin: 10px 0 0 0;">This code expires in 15 minutes</p>
+           </div>
+         </div>`
+            : `<div style="text-align: center; margin: 30px 0;">
+           <a href="${verificationUrl}" 
+              style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
+                     border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
+             Verify Email Address
+           </a>
+         </div>`;
+        const alternativeMethod = isCodeBased
+            ? `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
+           Enter this 6-digit code on the verification page to complete your registration.
+           If you didn't create an account with Labfry, please ignore this email.
+         </p>`
+            : `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
+           If the button doesn't work, you can also copy and paste this link into your browser:<br>
+           <a href="${verificationUrl}" style="color: #EE3638; word-break: break-all;">${verificationUrl}</a>
+         </p>`;
+        const mailOptions = {
+            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
+            to: email,
+            subject: "Verify Your Email Address - Labfry",
+            html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Welcome to Labfry!</h1>
+            <p style="color: #666666; font-size: 16px;">Please verify your email address to complete your registration</p>
+          </div>
+          
+          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
+            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
+              Thank you for signing up with Labfry! To complete your registration and access all features, 
+              ${isCodeBased
+                ? "please use the verification code below."
+                : "please verify your email address by clicking the button below."}
+            </p>
+            
+            ${verificationMethod}
+            
+            ${alternativeMethod}
+          </div>
+          
+          <div style="text-align: center; color: #999999; font-size: 12px;">
+            <p>${isCodeBased
+                ? "This verification code will expire in 15 minutes."
+                : "This verification link will expire in 24 hours."}</p>
+            <p>If you didn't create an account with Labfry, please ignore this email.</p>
+            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
+          </div>
+        </div>
+      `,
+        };
+        try {
+            await this.transporter.sendMail(mailOptions);
+            console.log(`✅ Email verification sent to: ${email}`);
+            console.log(`📧 Email service: ${this.configService.get("SMTP_HOST")}:${this.configService.get("SMTP_PORT")}`);
+            console.log(`📤 From: ${this.configService.get("FROM_EMAIL")}`);
+        }
+        catch (error) {
+            console.error("❌ Failed to send email verification:", error);
+            console.error(`📧 SMTP Configuration:`);
+            console.error(`   Host: ${this.configService.get("SMTP_HOST")}`);
+            console.error(`   Port: ${this.configService.get("SMTP_PORT")}`);
+            console.error(`   User: ${this.configService.get("SMTP_USER")}`);
+            console.error(`   From: ${this.configService.get("FROM_EMAIL")}`);
+            throw new Error("Failed to send verification email");
+        }
+    }
+    async sendPasswordReset(email, token, firstName, resetCode) {
+        const resetUrl = `${this.configService.get("FRONTEND_URL")}/reset-password?token=${token}`;
+        const isCodeBased = !!resetCode;
+        const resetMethod = isCodeBased
+            ? `<div style="text-align: center; margin: 30px 0;">
+           <div style="background-color: #f8f9fa; border: 2px solid #EE3638; border-radius: 8px; padding: 20px; margin: 20px 0; display: inline-block;">
+             <h3 style="color: #EE3638; margin: 0 0 10px 0; font-size: 24px;">Your Reset Code</h3>
+             <div style="font-size: 32px; font-weight: bold; color: #111111; letter-spacing: 5px; font-family: 'Courier New', monospace;">${resetCode}</div>
+             <p style="color: #666666; font-size: 14px; margin: 10px 0 0 0;">This code expires in 15 minutes</p>
+           </div>
+         </div>`
+            : `<div style="text-align: center; margin: 30px 0;">
+           <a href="${resetUrl}" 
+              style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
+                     border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
+             Reset Password
+           </a>
+         </div>`;
+        const alternativeMethod = isCodeBased
+            ? `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
+           Enter this 6-digit code on the password reset page to create a new password.
+           If you didn't request a password reset, please ignore this email.
+         </p>`
+            : `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
+           If the button doesn't work, you can also copy and paste this link into your browser:<br>
+           <a href="${resetUrl}" style="color: #EE3638; word-break: break-all;">${resetUrl}</a>
+         </p>`;
+        const mailOptions = {
+            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
+            to: email,
+            subject: "Reset Your Password - Labfry",
+            html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Password Reset Request</h1>
+            <p style="color: #666666; font-size: 16px;">We received a request to reset your password</p>
+          </div>
+          
+          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
+            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
+              We received a request to reset the password for your Labfry account. 
+              ${isCodeBased
+                ? "Please use the reset code below to create a new password."
+                : "If you made this request, please click the button below to reset your password."}
+            </p>
+            
+            ${resetMethod}
+            
+            ${alternativeMethod}
+          </div>
+          
+          <div style="text-align: center; color: #999999; font-size: 12px;">
+            <p>${isCodeBased
+                ? "This reset code will expire in 15 minutes."
+                : "This password reset link will expire in 1 hour."}</p>
+            <p>If you didn't request a password reset, please ignore this email. Your password will remain unchanged.</p>
+            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
+          </div>
+        </div>
+      `,
+        };
+        try {
+            await this.transporter.sendMail(mailOptions);
+            console.log(`✅ Password reset email sent to: ${email}`);
+            console.log(`📧 Email service: ${this.configService.get("SMTP_HOST")}:${this.configService.get("SMTP_PORT")}`);
+            console.log(`📤 From: ${this.configService.get("FROM_EMAIL")}`);
+        }
+        catch (error) {
+            console.error("❌ Failed to send password reset email:", error);
+            console.error(`📧 SMTP Configuration:`);
+            console.error(`   Host: ${this.configService.get("SMTP_HOST")}`);
+            console.error(`   Port: ${this.configService.get("SMTP_PORT")}`);
+            console.error(`   User: ${this.configService.get("SMTP_USER")}`);
+            console.error(`   From: ${this.configService.get("FROM_EMAIL")}`);
+            throw new Error("Failed to send password reset email");
+        }
+    }
+    async sendWelcomeEmail(email, firstName) {
+        const mailOptions = {
+            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
+            to: email,
+            subject: "Welcome to Labfry - Your Account is Ready!",
+            html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Welcome to Labfry!</h1>
+            <p style="color: #666666; font-size: 16px;">Your account has been successfully verified</p>
+          </div>
+          
+          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
+            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
+              Congratulations! Your email has been verified and your Labfry account is now active. 
+              You can now access all features and start exploring what we have to offer.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="${this.configService.get("FRONTEND_URL")}/login" 
+                 style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
+                        border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
+                Login to Your Account
+              </a>
+            </div>
+            
+            <p style="color: #666666; font-size: 16px; line-height: 1.6;">
+              If you have any questions or need assistance, please don't hesitate to contact our support team.
+            </p>
+          </div>
+          
+          <div style="text-align: center; color: #999999; font-size: 12px;">
+            <p>Thank you for choosing Labfry Technology!</p>
+            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
+          </div>
+        </div>
+      `,
+        };
+        try {
+            await this.transporter.sendMail(mailOptions);
+            console.log(`✅ Welcome email sent to: ${email}`);
+        }
+        catch (error) {
+            console.error("❌ Failed to send welcome email:", error);
+        }
+    }
+    async testConnection() {
+        try {
+            await this.transporter.verify();
+            console.log("✅ Email service connection verified");
+            return true;
+        }
+        catch (error) {
+            console.error("❌ Email service connection failed:", error);
+            return false;
+        }
+    }
+};
+exports.EmailService = EmailService;
+exports.EmailService = EmailService = __decorate([
+    (0, common_1.Injectable)(),
+    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
+], EmailService);
+
+
+/***/ }),
+/* 19 */
+/***/ ((module) => {
+
+module.exports = require("nodemailer");
+
+/***/ }),
+/* 20 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1368,9 +1861,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AdminResetPasswordDto = exports.OnlineStatusDto = exports.ResendVerificationDto = exports.UpdateProfileDto = exports.ResetPasswordDto = exports.ForgotPasswordDto = exports.VerifyEmailDto = exports.LoginDto = exports.RegisterDto = void 0;
 exports.IsPasswordMatch = IsPasswordMatch;
-const class_validator_1 = __webpack_require__(/*! class-validator */ "class-validator");
-const class_transformer_1 = __webpack_require__(/*! class-transformer */ "class-transformer");
-const swagger_1 = __webpack_require__(/*! @nestjs/swagger */ "@nestjs/swagger");
+const class_validator_1 = __webpack_require__(21);
+const class_transformer_1 = __webpack_require__(22);
+const swagger_1 = __webpack_require__(3);
 function IsPasswordMatch(property, validationOptions) {
     return (0, class_validator_1.ValidateBy)({
         name: "isPasswordMatch",
@@ -1638,11 +2131,19 @@ __decorate([
 
 
 /***/ }),
+/* 21 */
+/***/ ((module) => {
 
-/***/ "./src/auth/dto/response.dto.ts":
-/*!**************************************!*\
-  !*** ./src/auth/dto/response.dto.ts ***!
-  \**************************************/
+module.exports = require("class-validator");
+
+/***/ }),
+/* 22 */
+/***/ ((module) => {
+
+module.exports = require("class-transformer");
+
+/***/ }),
+/* 23 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1658,7 +2159,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RateLimitResponseDto = exports.ErrorResponseDto = exports.AuthResponseDto = exports.UserResponseDto = void 0;
-const swagger_1 = __webpack_require__(/*! @nestjs/swagger */ "@nestjs/swagger");
+const swagger_1 = __webpack_require__(3);
 class UserResponseDto {
 }
 exports.UserResponseDto = UserResponseDto;
@@ -1815,270 +2316,7 @@ __decorate([
 
 
 /***/ }),
-
-/***/ "./src/email/email.service.ts":
-/*!************************************!*\
-  !*** ./src/email/email.service.ts ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var _a;
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.EmailService = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const nodemailer = __webpack_require__(/*! nodemailer */ "nodemailer");
-let EmailService = class EmailService {
-    constructor(configService) {
-        this.configService = configService;
-        this.transporter = nodemailer.createTransport({
-            host: this.configService.get("SMTP_HOST"),
-            port: this.configService.get("SMTP_PORT"),
-            secure: this.configService.get("SMTP_PORT") === 465,
-            auth: {
-                user: this.configService.get("SMTP_USER"),
-                pass: this.configService.get("SMTP_PASS"),
-            },
-        });
-    }
-    async sendEmailVerification(email, token, firstName, verificationCode) {
-        const verificationUrl = `${this.configService.get("FRONTEND_URL")}/verify?token=${token}&type=email`;
-        const isCodeBased = !!verificationCode;
-        const verificationMethod = isCodeBased
-            ? `<div style="text-align: center; margin: 30px 0;">
-           <div style="background-color: #f8f9fa; border: 2px solid #EE3638; border-radius: 8px; padding: 20px; margin: 20px 0; display: inline-block;">
-             <h3 style="color: #EE3638; margin: 0 0 10px 0; font-size: 24px;">Your Verification Code</h3>
-             <div style="font-size: 32px; font-weight: bold; color: #111111; letter-spacing: 5px; font-family: 'Courier New', monospace;">${verificationCode}</div>
-             <p style="color: #666666; font-size: 14px; margin: 10px 0 0 0;">This code expires in 15 minutes</p>
-           </div>
-         </div>`
-            : `<div style="text-align: center; margin: 30px 0;">
-           <a href="${verificationUrl}" 
-              style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
-                     border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
-             Verify Email Address
-           </a>
-         </div>`;
-        const alternativeMethod = isCodeBased
-            ? `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
-           Enter this 6-digit code on the verification page to complete your registration.
-           If you didn't create an account with Labfry, please ignore this email.
-         </p>`
-            : `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
-           If the button doesn't work, you can also copy and paste this link into your browser:<br>
-           <a href="${verificationUrl}" style="color: #EE3638; word-break: break-all;">${verificationUrl}</a>
-         </p>`;
-        const mailOptions = {
-            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
-            to: email,
-            subject: "Verify Your Email Address - Labfry",
-            html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Welcome to Labfry!</h1>
-            <p style="color: #666666; font-size: 16px;">Please verify your email address to complete your registration</p>
-          </div>
-          
-          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
-            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
-            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
-              Thank you for signing up with Labfry! To complete your registration and access all features, 
-              ${isCodeBased
-                ? "please use the verification code below."
-                : "please verify your email address by clicking the button below."}
-            </p>
-            
-            ${verificationMethod}
-            
-            ${alternativeMethod}
-          </div>
-          
-          <div style="text-align: center; color: #999999; font-size: 12px;">
-            <p>${isCodeBased
-                ? "This verification code will expire in 15 minutes."
-                : "This verification link will expire in 24 hours."}</p>
-            <p>If you didn't create an account with Labfry, please ignore this email.</p>
-            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
-          </div>
-        </div>
-      `,
-        };
-        try {
-            await this.transporter.sendMail(mailOptions);
-            console.log(`✅ Email verification sent to: ${email}`);
-            console.log(`📧 Email service: ${this.configService.get("SMTP_HOST")}:${this.configService.get("SMTP_PORT")}`);
-            console.log(`📤 From: ${this.configService.get("FROM_EMAIL")}`);
-        }
-        catch (error) {
-            console.error("❌ Failed to send email verification:", error);
-            console.error(`📧 SMTP Configuration:`);
-            console.error(`   Host: ${this.configService.get("SMTP_HOST")}`);
-            console.error(`   Port: ${this.configService.get("SMTP_PORT")}`);
-            console.error(`   User: ${this.configService.get("SMTP_USER")}`);
-            console.error(`   From: ${this.configService.get("FROM_EMAIL")}`);
-            throw new Error("Failed to send verification email");
-        }
-    }
-    async sendPasswordReset(email, token, firstName, resetCode) {
-        const resetUrl = `${this.configService.get("FRONTEND_URL")}/reset-password?token=${token}`;
-        const isCodeBased = !!resetCode;
-        const resetMethod = isCodeBased
-            ? `<div style="text-align: center; margin: 30px 0;">
-           <div style="background-color: #f8f9fa; border: 2px solid #EE3638; border-radius: 8px; padding: 20px; margin: 20px 0; display: inline-block;">
-             <h3 style="color: #EE3638; margin: 0 0 10px 0; font-size: 24px;">Your Reset Code</h3>
-             <div style="font-size: 32px; font-weight: bold; color: #111111; letter-spacing: 5px; font-family: 'Courier New', monospace;">${resetCode}</div>
-             <p style="color: #666666; font-size: 14px; margin: 10px 0 0 0;">This code expires in 15 minutes</p>
-           </div>
-         </div>`
-            : `<div style="text-align: center; margin: 30px 0;">
-           <a href="${resetUrl}" 
-              style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
-                     border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
-             Reset Password
-           </a>
-         </div>`;
-        const alternativeMethod = isCodeBased
-            ? `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
-           Enter this 6-digit code on the password reset page to create a new password.
-           If you didn't request a password reset, please ignore this email.
-         </p>`
-            : `<p style="color: #999999; font-size: 14px; line-height: 1.5;">
-           If the button doesn't work, you can also copy and paste this link into your browser:<br>
-           <a href="${resetUrl}" style="color: #EE3638; word-break: break-all;">${resetUrl}</a>
-         </p>`;
-        const mailOptions = {
-            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
-            to: email,
-            subject: "Reset Your Password - Labfry",
-            html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Password Reset Request</h1>
-            <p style="color: #666666; font-size: 16px;">We received a request to reset your password</p>
-          </div>
-          
-          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
-            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
-            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
-              We received a request to reset the password for your Labfry account. 
-              ${isCodeBased
-                ? "Please use the reset code below to create a new password."
-                : "If you made this request, please click the button below to reset your password."}
-            </p>
-            
-            ${resetMethod}
-            
-            ${alternativeMethod}
-          </div>
-          
-          <div style="text-align: center; color: #999999; font-size: 12px;">
-            <p>${isCodeBased
-                ? "This reset code will expire in 15 minutes."
-                : "This password reset link will expire in 1 hour."}</p>
-            <p>If you didn't request a password reset, please ignore this email. Your password will remain unchanged.</p>
-            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
-          </div>
-        </div>
-      `,
-        };
-        try {
-            await this.transporter.sendMail(mailOptions);
-            console.log(`✅ Password reset email sent to: ${email}`);
-            console.log(`📧 Email service: ${this.configService.get("SMTP_HOST")}:${this.configService.get("SMTP_PORT")}`);
-            console.log(`📤 From: ${this.configService.get("FROM_EMAIL")}`);
-        }
-        catch (error) {
-            console.error("❌ Failed to send password reset email:", error);
-            console.error(`📧 SMTP Configuration:`);
-            console.error(`   Host: ${this.configService.get("SMTP_HOST")}`);
-            console.error(`   Port: ${this.configService.get("SMTP_PORT")}`);
-            console.error(`   User: ${this.configService.get("SMTP_USER")}`);
-            console.error(`   From: ${this.configService.get("FROM_EMAIL")}`);
-            throw new Error("Failed to send password reset email");
-        }
-    }
-    async sendWelcomeEmail(email, firstName) {
-        const mailOptions = {
-            from: `"${this.configService.get("FROM_NAME")}" <${this.configService.get("FROM_EMAIL")}>`,
-            to: email,
-            subject: "Welcome to Labfry - Your Account is Ready!",
-            html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #EE3638; font-size: 28px; margin-bottom: 10px;">Welcome to Labfry!</h1>
-            <p style="color: #666666; font-size: 16px;">Your account has been successfully verified</p>
-          </div>
-          
-          <div style="background-color: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
-            <h2 style="color: #111111; font-size: 20px; margin-bottom: 15px;">Hi ${firstName},</h2>
-            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
-              Congratulations! Your email has been verified and your Labfry account is now active. 
-              You can now access all features and start exploring what we have to offer.
-            </p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-              <a href="${this.configService.get("FRONTEND_URL")}/login" 
-                 style="background-color: #EE3638; color: white; padding: 15px 30px; text-decoration: none; 
-                        border-radius: 8px; font-size: 16px; font-weight: bold; display: inline-block;">
-                Login to Your Account
-              </a>
-            </div>
-            
-            <p style="color: #666666; font-size: 16px; line-height: 1.6;">
-              If you have any questions or need assistance, please don't hesitate to contact our support team.
-            </p>
-          </div>
-          
-          <div style="text-align: center; color: #999999; font-size: 12px;">
-            <p>Thank you for choosing Labfry Technology!</p>
-            <p>&copy; 2024 Labfry Technology. All rights reserved.</p>
-          </div>
-        </div>
-      `,
-        };
-        try {
-            await this.transporter.sendMail(mailOptions);
-            console.log(`✅ Welcome email sent to: ${email}`);
-        }
-        catch (error) {
-            console.error("❌ Failed to send welcome email:", error);
-        }
-    }
-    async testConnection() {
-        try {
-            await this.transporter.verify();
-            console.log("✅ Email service connection verified");
-            return true;
-        }
-        catch (error) {
-            console.error("❌ Email service connection failed:", error);
-            return false;
-        }
-    }
-};
-exports.EmailService = EmailService;
-exports.EmailService = EmailService = __decorate([
-    (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
-], EmailService);
-
-
-/***/ }),
-
-/***/ "./src/filters/throttler-exception.filter.ts":
-/*!***************************************************!*\
-  !*** ./src/filters/throttler-exception.filter.ts ***!
-  \***************************************************/
+/* 24 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -2089,61 +2327,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ThrottlerExceptionFilter = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const throttler_1 = __webpack_require__(/*! @nestjs/throttler */ "@nestjs/throttler");
-let ThrottlerExceptionFilter = class ThrottlerExceptionFilter {
-    catch(exception, host) {
-        const ctx = host.switchToHttp();
-        const response = ctx.getResponse();
-        const request = ctx.getRequest();
-        const path = request.url;
-        let message = "Too many requests. Please try again in 1 minute.";
-        let retryAfter = 60;
-        if (path.includes("/auth/login")) {
-            message = "Too many login attempts. Please try again in 1 minute.";
-            retryAfter = 60;
-        }
-        else if (path.includes("/auth/register")) {
-            message =
-                "Too many registration attempts. Please try again in 5 minutes.";
-            retryAfter = 300;
-        }
-        else if (path.includes("/auth/forgot-password") ||
-            path.includes("/auth/resend-verification")) {
-            message = "Too many email requests. Please try again in 5 minutes.";
-            retryAfter = 300;
-        }
-        else if (path.includes("/auth/verify-email") ||
-            path.includes("/auth/reset-password")) {
-            message = "Too many verification attempts. Please try again in 1 minute.";
-            retryAfter = 60;
-        }
-        response
-            .status(common_1.HttpStatus.TOO_MANY_REQUESTS)
-            .setHeader("Retry-After", retryAfter)
-            .json({
-            statusCode: common_1.HttpStatus.TOO_MANY_REQUESTS,
-            message,
-            error: "Too Many Requests",
-            retryAfter,
-            timestamp: new Date().toISOString(),
-            path: request.url,
-        });
-    }
+exports.HealthModule = void 0;
+const common_1 = __webpack_require__(2);
+const health_controller_1 = __webpack_require__(25);
+let HealthModule = class HealthModule {
 };
-exports.ThrottlerExceptionFilter = ThrottlerExceptionFilter;
-exports.ThrottlerExceptionFilter = ThrottlerExceptionFilter = __decorate([
-    (0, common_1.Catch)(throttler_1.ThrottlerException)
-], ThrottlerExceptionFilter);
+exports.HealthModule = HealthModule;
+exports.HealthModule = HealthModule = __decorate([
+    (0, common_1.Module)({
+        controllers: [health_controller_1.HealthController],
+    })
+], HealthModule);
 
 
 /***/ }),
-
-/***/ "./src/health/health.controller.ts":
-/*!*****************************************!*\
-  !*** ./src/health/health.controller.ts ***!
-  \*****************************************/
+/* 25 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -2158,8 +2356,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.HealthController = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const swagger_1 = __webpack_require__(/*! @nestjs/swagger */ "@nestjs/swagger");
+const common_1 = __webpack_require__(2);
+const swagger_1 = __webpack_require__(3);
 let HealthController = class HealthController {
     check() {
         return {
@@ -2185,11 +2383,7 @@ exports.HealthController = HealthController = __decorate([
 
 
 /***/ }),
-
-/***/ "./src/health/health.module.ts":
-/*!*************************************!*\
-  !*** ./src/health/health.module.ts ***!
-  \*************************************/
+/* 26 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -2200,228 +2394,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.HealthModule = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const health_controller_1 = __webpack_require__(/*! ./health.controller */ "./src/health/health.controller.ts");
-let HealthModule = class HealthModule {
+exports.WebSocketModule = void 0;
+const common_1 = __webpack_require__(2);
+const socket_gateway_1 = __webpack_require__(27);
+const auth_module_1 = __webpack_require__(7);
+const jwt_service_1 = __webpack_require__(15);
+let WebSocketModule = class WebSocketModule {
 };
-exports.HealthModule = HealthModule;
-exports.HealthModule = HealthModule = __decorate([
+exports.WebSocketModule = WebSocketModule;
+exports.WebSocketModule = WebSocketModule = __decorate([
     (0, common_1.Module)({
-        controllers: [health_controller_1.HealthController],
+        imports: [auth_module_1.AuthModule],
+        providers: [socket_gateway_1.SocketGateway, jwt_service_1.JWTService],
+        exports: [socket_gateway_1.SocketGateway],
     })
-], HealthModule);
+], WebSocketModule);
 
 
 /***/ }),
-
-/***/ "./src/prisma/prisma.service.ts":
-/*!**************************************!*\
-  !*** ./src/prisma/prisma.service.ts ***!
-  \**************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var _a;
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.PrismaService = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const client_1 = __webpack_require__(/*! @prisma/client */ "@prisma/client");
-let PrismaService = class PrismaService extends client_1.PrismaClient {
-    constructor(configService) {
-        super({
-            log: configService.get("NODE_ENV") === "development"
-                ? ["query", "error", "warn"]
-                : ["error"],
-        });
-        this.configService = configService;
-    }
-    async onModuleInit() {
-        try {
-            await this.$connect();
-            console.log("✅ Database connected successfully");
-        }
-        catch (error) {
-            console.error("❌ Database connection failed:", error);
-            throw error;
-        }
-    }
-    async onModuleDestroy() {
-        try {
-            await this.$disconnect();
-            console.log("✅ Database disconnected successfully");
-        }
-        catch (error) {
-            console.error("❌ Database disconnection failed:", error);
-            throw error;
-        }
-    }
-    async healthCheck() {
-        try {
-            await this.user.findFirst();
-            return true;
-        }
-        catch (error) {
-            console.error("❌ Database health check failed:", error);
-            return false;
-        }
-    }
-};
-exports.PrismaService = PrismaService;
-exports.PrismaService = PrismaService = __decorate([
-    (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
-], PrismaService);
-
-
-/***/ }),
-
-/***/ "./src/utils/jwt.service.ts":
-/*!**********************************!*\
-  !*** ./src/utils/jwt.service.ts ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var _a;
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.JWTService = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const jwt = __webpack_require__(/*! jsonwebtoken */ "jsonwebtoken");
-let JWTService = class JWTService {
-    constructor(configService) {
-        this.configService = configService;
-    }
-    generateToken(payload) {
-        return jwt.sign(payload, this.configService.get("JWT_SECRET"), {
-            expiresIn: "15m",
-        });
-    }
-    generateRefreshToken(payload) {
-        return jwt.sign(payload, this.configService.get("JWT_REFRESH_SECRET"), {
-            expiresIn: "7d",
-        });
-    }
-    verifyToken(token) {
-        try {
-            if (!token) {
-                throw new Error("Token is required");
-            }
-            return jwt.verify(token, this.configService.get("JWT_SECRET"));
-        }
-        catch (error) {
-            if (error.name === "TokenExpiredError") {
-                throw new Error("Token has expired");
-            }
-            else if (error.name === "JsonWebTokenError") {
-                throw new Error("Invalid token format");
-            }
-            else if (error.message === "Token is required") {
-                throw error;
-            }
-            else {
-                throw new Error("Invalid or expired token");
-            }
-        }
-    }
-    verifyRefreshToken(token) {
-        try {
-            return jwt.verify(token, this.configService.get("JWT_REFRESH_SECRET"));
-        }
-        catch (error) {
-            throw new Error("Invalid or expired refresh token");
-        }
-    }
-    generateEmailVerificationToken(email) {
-        return jwt.sign({ email }, this.configService.get("EMAIL_VERIFICATION_SECRET"), {
-            expiresIn: "24h",
-        });
-    }
-    verifyEmailVerificationToken(token) {
-        try {
-            return jwt.verify(token, this.configService.get("EMAIL_VERIFICATION_SECRET"));
-        }
-        catch (error) {
-            throw new Error("Invalid or expired email verification token");
-        }
-    }
-    generatePasswordResetToken(email) {
-        return jwt.sign({ email }, this.configService.get("PASSWORD_RESET_SECRET"), {
-            expiresIn: "1h",
-        });
-    }
-    verifyPasswordResetToken(token) {
-        try {
-            return jwt.verify(token, this.configService.get("PASSWORD_RESET_SECRET"));
-        }
-        catch (error) {
-            throw new Error("Invalid or expired password reset token");
-        }
-    }
-};
-exports.JWTService = JWTService;
-exports.JWTService = JWTService = __decorate([
-    (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object])
-], JWTService);
-
-
-/***/ }),
-
-/***/ "./src/utils/verification.service.ts":
-/*!*******************************************!*\
-  !*** ./src/utils/verification.service.ts ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.generateVerificationCode = generateVerificationCode;
-exports.getCodeExpiryTime = getCodeExpiryTime;
-exports.isCodeExpired = isCodeExpired;
-exports.isValidCodeFormat = isValidCodeFormat;
-function generateVerificationCode() {
-    return Math.floor(100000 + Math.random() * 900000).toString();
-}
-function getCodeExpiryTime() {
-    return new Date(Date.now() + 15 * 60 * 1000);
-}
-function isCodeExpired(expiryDate) {
-    if (!expiryDate)
-        return true;
-    return new Date() > expiryDate;
-}
-function isValidCodeFormat(code) {
-    return /^\d{6}$/.test(code);
-}
-
-
-/***/ }),
-
-/***/ "./src/websocket/socket.gateway.ts":
-/*!*****************************************!*\
-  !*** ./src/websocket/socket.gateway.ts ***!
-  \*****************************************/
+/* 27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -2440,12 +2431,12 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SocketGateway = void 0;
-const websockets_1 = __webpack_require__(/*! @nestjs/websockets */ "@nestjs/websockets");
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const socket_io_1 = __webpack_require__(/*! socket.io */ "socket.io");
-const jwt_service_1 = __webpack_require__(/*! ../utils/jwt.service */ "./src/utils/jwt.service.ts");
-const auth_service_1 = __webpack_require__(/*! ../auth/auth.service */ "./src/auth/auth.service.ts");
+const websockets_1 = __webpack_require__(28);
+const common_1 = __webpack_require__(2);
+const config_1 = __webpack_require__(5);
+const socket_io_1 = __webpack_require__(29);
+const jwt_service_1 = __webpack_require__(15);
+const auth_service_1 = __webpack_require__(10);
 let SocketGateway = class SocketGateway {
     constructor(jwtService, authService, configService) {
         this.jwtService = jwtService;
@@ -2695,9 +2686,31 @@ exports.SocketGateway = SocketGateway = __decorate([
     (0, common_1.Injectable)(),
     (0, websockets_1.WebSocketGateway)({
         cors: {
-            origin: process.env.FRONTEND_URL || "http://localhost:3001",
+            origin: [
+                process.env.FRONTEND_URL || "http://localhost:3001",
+                process.env.FRONTEND_URL_NGINX || "http://localhost:3000",
+                process.env.FRONTEND_URL_PRODUCTION || "https://labfry.pino7.com",
+                process.env.FRONTEND_URL_SERVER || "http://93.127.199.59:3001",
+                process.env.FRONTEND_URL_SERVER_NGINX || "http://93.127.199.59:3000",
+                "http://localhost:3000",
+                "http://localhost:3001",
+                "http://93.127.199.59:3000",
+                "http://93.127.199.59:3001",
+                "https://labfry.pino7.com",
+                "https://www.labfry.pino7.com",
+                /localhost:\d+$/,
+                /.*\.pino7\.com$/
+            ],
             methods: ["GET", "POST"],
             credentials: true,
+            allowedHeaders: [
+                "Content-Type",
+                "Authorization",
+                "Cookie",
+                "X-Requested-With",
+                "Accept",
+                "Origin"
+            ]
         },
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof jwt_service_1.JWTService !== "undefined" && jwt_service_1.JWTService) === "function" ? _a : Object, typeof (_b = typeof auth_service_1.AuthService !== "undefined" && auth_service_1.AuthService) === "function" ? _b : Object, typeof (_c = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _c : Object])
@@ -2705,11 +2718,25 @@ exports.SocketGateway = SocketGateway = __decorate([
 
 
 /***/ }),
+/* 28 */
+/***/ ((module) => {
 
-/***/ "./src/websocket/websocket.module.ts":
-/*!*******************************************!*\
-  !*** ./src/websocket/websocket.module.ts ***!
-  \*******************************************/
+module.exports = require("@nestjs/websockets");
+
+/***/ }),
+/* 29 */
+/***/ ((module) => {
+
+module.exports = require("socket.io");
+
+/***/ }),
+/* 30 */
+/***/ ((module) => {
+
+module.exports = require("cookie-parser");
+
+/***/ }),
+/* 31 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -2720,186 +2747,57 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.WebSocketModule = void 0;
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const socket_gateway_1 = __webpack_require__(/*! ./socket.gateway */ "./src/websocket/socket.gateway.ts");
-const auth_module_1 = __webpack_require__(/*! ../auth/auth.module */ "./src/auth/auth.module.ts");
-const jwt_service_1 = __webpack_require__(/*! ../utils/jwt.service */ "./src/utils/jwt.service.ts");
-let WebSocketModule = class WebSocketModule {
+exports.ThrottlerExceptionFilter = void 0;
+const common_1 = __webpack_require__(2);
+const throttler_1 = __webpack_require__(6);
+let ThrottlerExceptionFilter = class ThrottlerExceptionFilter {
+    catch(exception, host) {
+        const ctx = host.switchToHttp();
+        const response = ctx.getResponse();
+        const request = ctx.getRequest();
+        const path = request.url;
+        let message = "Too many requests. Please try again in 1 minute.";
+        let retryAfter = 60;
+        if (path.includes("/auth/login")) {
+            message = "Too many login attempts. Please try again in 1 minute.";
+            retryAfter = 60;
+        }
+        else if (path.includes("/auth/register")) {
+            message =
+                "Too many registration attempts. Please try again in 5 minutes.";
+            retryAfter = 300;
+        }
+        else if (path.includes("/auth/forgot-password") ||
+            path.includes("/auth/resend-verification")) {
+            message = "Too many email requests. Please try again in 5 minutes.";
+            retryAfter = 300;
+        }
+        else if (path.includes("/auth/verify-email") ||
+            path.includes("/auth/reset-password")) {
+            message = "Too many verification attempts. Please try again in 1 minute.";
+            retryAfter = 60;
+        }
+        response
+            .status(common_1.HttpStatus.TOO_MANY_REQUESTS)
+            .setHeader("Retry-After", retryAfter)
+            .json({
+            statusCode: common_1.HttpStatus.TOO_MANY_REQUESTS,
+            message,
+            error: "Too Many Requests",
+            retryAfter,
+            timestamp: new Date().toISOString(),
+            path: request.url,
+        });
+    }
 };
-exports.WebSocketModule = WebSocketModule;
-exports.WebSocketModule = WebSocketModule = __decorate([
-    (0, common_1.Module)({
-        imports: [auth_module_1.AuthModule],
-        providers: [socket_gateway_1.SocketGateway, jwt_service_1.JWTService],
-        exports: [socket_gateway_1.SocketGateway],
-    })
-], WebSocketModule);
+exports.ThrottlerExceptionFilter = ThrottlerExceptionFilter;
+exports.ThrottlerExceptionFilter = ThrottlerExceptionFilter = __decorate([
+    (0, common_1.Catch)(throttler_1.ThrottlerException)
+], ThrottlerExceptionFilter);
 
-
-/***/ }),
-
-/***/ "@nestjs/common":
-/*!*********************************!*\
-  !*** external "@nestjs/common" ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/common");
-
-/***/ }),
-
-/***/ "@nestjs/config":
-/*!*********************************!*\
-  !*** external "@nestjs/config" ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/config");
-
-/***/ }),
-
-/***/ "@nestjs/core":
-/*!*******************************!*\
-  !*** external "@nestjs/core" ***!
-  \*******************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/core");
-
-/***/ }),
-
-/***/ "@nestjs/swagger":
-/*!**********************************!*\
-  !*** external "@nestjs/swagger" ***!
-  \**********************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/swagger");
-
-/***/ }),
-
-/***/ "@nestjs/throttler":
-/*!************************************!*\
-  !*** external "@nestjs/throttler" ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/throttler");
-
-/***/ }),
-
-/***/ "@nestjs/websockets":
-/*!*************************************!*\
-  !*** external "@nestjs/websockets" ***!
-  \*************************************/
-/***/ ((module) => {
-
-module.exports = require("@nestjs/websockets");
-
-/***/ }),
-
-/***/ "@prisma/client":
-/*!*********************************!*\
-  !*** external "@prisma/client" ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = require("@prisma/client");
-
-/***/ }),
-
-/***/ "bcryptjs":
-/*!***************************!*\
-  !*** external "bcryptjs" ***!
-  \***************************/
-/***/ ((module) => {
-
-module.exports = require("bcryptjs");
-
-/***/ }),
-
-/***/ "class-transformer":
-/*!************************************!*\
-  !*** external "class-transformer" ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = require("class-transformer");
-
-/***/ }),
-
-/***/ "class-validator":
-/*!**********************************!*\
-  !*** external "class-validator" ***!
-  \**********************************/
-/***/ ((module) => {
-
-module.exports = require("class-validator");
-
-/***/ }),
-
-/***/ "cookie-parser":
-/*!********************************!*\
-  !*** external "cookie-parser" ***!
-  \********************************/
-/***/ ((module) => {
-
-module.exports = require("cookie-parser");
-
-/***/ }),
-
-/***/ "express":
-/*!**************************!*\
-  !*** external "express" ***!
-  \**************************/
-/***/ ((module) => {
-
-module.exports = require("express");
-
-/***/ }),
-
-/***/ "jsonwebtoken":
-/*!*******************************!*\
-  !*** external "jsonwebtoken" ***!
-  \*******************************/
-/***/ ((module) => {
-
-module.exports = require("jsonwebtoken");
-
-/***/ }),
-
-/***/ "nodemailer":
-/*!*****************************!*\
-  !*** external "nodemailer" ***!
-  \*****************************/
-/***/ ((module) => {
-
-module.exports = require("nodemailer");
-
-/***/ }),
-
-/***/ "socket.io":
-/*!****************************!*\
-  !*** external "socket.io" ***!
-  \****************************/
-/***/ ((module) => {
-
-module.exports = require("socket.io");
-
-/***/ }),
-
-/***/ "uuid":
-/*!***********************!*\
-  !*** external "uuid" ***!
-  \***********************/
-/***/ ((module) => {
-
-module.exports = require("uuid");
 
 /***/ })
-
-/******/ 	});
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -2930,18 +2828,15 @@ var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
 var exports = __webpack_exports__;
-/*!*********************!*\
-  !*** ./src/main.ts ***!
-  \*********************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const core_1 = __webpack_require__(/*! @nestjs/core */ "@nestjs/core");
-const common_1 = __webpack_require__(/*! @nestjs/common */ "@nestjs/common");
-const swagger_1 = __webpack_require__(/*! @nestjs/swagger */ "@nestjs/swagger");
-const app_module_1 = __webpack_require__(/*! ./app.module */ "./src/app.module.ts");
-const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
-const cookieParser = __webpack_require__(/*! cookie-parser */ "cookie-parser");
-const throttler_exception_filter_1 = __webpack_require__(/*! ./filters/throttler-exception.filter */ "./src/filters/throttler-exception.filter.ts");
+const core_1 = __webpack_require__(1);
+const common_1 = __webpack_require__(2);
+const swagger_1 = __webpack_require__(3);
+const app_module_1 = __webpack_require__(4);
+const config_1 = __webpack_require__(5);
+const cookieParser = __webpack_require__(30);
+const throttler_exception_filter_1 = __webpack_require__(31);
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const configService = app.get(config_1.ConfigService);
@@ -2954,11 +2849,53 @@ async function bootstrap() {
         },
     }));
     app.useGlobalFilters(new throttler_exception_filter_1.ThrottlerExceptionFilter());
+    const frontendUrls = [
+        process.env.FRONTEND_URL || "http://localhost:3001",
+        process.env.FRONTEND_URL_NGINX || "http://localhost:3000",
+        process.env.FRONTEND_URL_PRODUCTION || "https://labfry.pino7.com",
+        process.env.FRONTEND_URL_SERVER || "http://93.127.199.59:3001",
+        process.env.FRONTEND_URL_SERVER_NGINX || "http://93.127.199.59:3000",
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "http://93.127.199.59:3000",
+        "http://93.127.199.59:3001",
+        "https://labfry.pino7.com",
+        "https://www.labfry.pino7.com"
+    ];
     app.enableCors({
-        origin: configService.get("FRONTEND_URL") || "http://localhost:3001",
+        origin: (origin, callback) => {
+            if (!origin)
+                return callback(null, true);
+            console.log('🌐 CORS Origin Request:', origin);
+            if (frontendUrls.indexOf(origin) !== -1) {
+                return callback(null, true);
+            }
+            if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
+                return callback(null, true);
+            }
+            if (origin.includes('.pino7.com')) {
+                return callback(null, true);
+            }
+            if (origin === 'https://labfry.pino7.com' || origin === 'https://www.labfry.pino7.com') {
+                return callback(null, true);
+            }
+            return callback(new Error('Not allowed by CORS'), false);
+        },
         credentials: true,
-        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        allowedHeaders: ["Content-Type", "Authorization", "Cookie"],
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+        allowedHeaders: [
+            "Content-Type",
+            "Authorization",
+            "Cookie",
+            "X-Requested-With",
+            "Accept",
+            "Origin",
+            "Access-Control-Request-Method",
+            "Access-Control-Request-Headers"
+        ],
+        exposedHeaders: ["Set-Cookie"],
+        optionsSuccessStatus: 200,
+        preflightContinue: false
     });
     app.use(cookieParser());
     app.setGlobalPrefix("api");

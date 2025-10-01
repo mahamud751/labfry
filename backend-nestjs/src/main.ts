@@ -27,11 +27,64 @@ async function bootstrap() {
   app.useGlobalFilters(new ThrottlerExceptionFilter());
 
   // Enable CORS
+  const frontendUrls = [
+    process.env.FRONTEND_URL || "http://localhost:3001",
+    process.env.FRONTEND_URL_NGINX || "http://localhost:3000",
+    process.env.FRONTEND_URL_PRODUCTION || "https://labfry.pino7.com",
+    process.env.FRONTEND_URL_SERVER || "http://93.127.199.59:3001",
+    process.env.FRONTEND_URL_SERVER_NGINX || "http://93.127.199.59:3000",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://93.127.199.59:3000",
+    "http://93.127.199.59:3001",
+    "https://labfry.pino7.com",
+    "https://www.labfry.pino7.com"
+  ];
+  
   app.enableCors({
-    origin: configService.get("FRONTEND_URL") || "http://localhost:3001",
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      
+      console.log('🌐 CORS Origin Request:', origin);
+      
+      // Check if origin is in allowed list
+      if (frontendUrls.indexOf(origin) !== -1) {
+        return callback(null, true);
+      }
+      
+      // Allow all localhost origins for development
+      if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
+        return callback(null, true);
+      }
+      
+      // Allow all pino7.com subdomains
+      if (origin.includes('.pino7.com')) {
+        return callback(null, true);
+      }
+      
+      // Allow specific production domains
+      if (origin === 'https://labfry.pino7.com' || origin === 'https://www.labfry.pino7.com') {
+        return callback(null, true);
+      }
+      
+      return callback(new Error('Not allowed by CORS'), false);
+    },
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization", "Cookie"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allowedHeaders: [
+      "Content-Type", 
+      "Authorization", 
+      "Cookie", 
+      "X-Requested-With",
+      "Accept",
+      "Origin",
+      "Access-Control-Request-Method",
+      "Access-Control-Request-Headers"
+    ],
+    exposedHeaders: ["Set-Cookie"],
+    optionsSuccessStatus: 200,
+    preflightContinue: false
   });
 
   // Cookie parser

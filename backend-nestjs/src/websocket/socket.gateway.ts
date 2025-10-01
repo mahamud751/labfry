@@ -17,9 +17,31 @@ import { SocketUser, OnlineStatusUpdate } from "../types";
 @Injectable()
 @WebSocketGateway({
   cors: {
-    origin: process.env.FRONTEND_URL || "http://localhost:3001",
+    origin: [
+      process.env.FRONTEND_URL || "http://localhost:3001",
+      process.env.FRONTEND_URL_NGINX || "http://localhost:3000",
+      process.env.FRONTEND_URL_PRODUCTION || "https://labfry.pino7.com",
+      process.env.FRONTEND_URL_SERVER || "http://93.127.199.59:3001",
+      process.env.FRONTEND_URL_SERVER_NGINX || "http://93.127.199.59:3000",
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "http://93.127.199.59:3000",
+      "http://93.127.199.59:3001",
+      "https://labfry.pino7.com",
+      "https://www.labfry.pino7.com",
+      /localhost:\d+$/,
+      /.*\.pino7\.com$/
+    ],
     methods: ["GET", "POST"],
     credentials: true,
+    allowedHeaders: [
+      "Content-Type", 
+      "Authorization", 
+      "Cookie", 
+      "X-Requested-With",
+      "Accept",
+      "Origin"
+    ]
   },
 })
 export class SocketGateway implements OnGatewayConnection, OnGatewayDisconnect {

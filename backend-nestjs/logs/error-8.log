@@ -1,0 +1,160 @@
+2025-10-01 23:32:49 +00:00: [31m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:49 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:49 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:49 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:49 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:49 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:49 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:49 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:49 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:49 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:49 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:49 +00:00:   errno: -98,
+2025-10-01 23:32:49 +00:00:   syscall: 'listen',
+2025-10-01 23:32:49 +00:00:   address: '::',
+2025-10-01 23:32:49 +00:00:   port: 5000
+2025-10-01 23:32:49 +00:00: }
+2025-10-01 23:32:52 +00:00: [31m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:52 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:52 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:52 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:52 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:52 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:52 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:52 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:52 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:52 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:52 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:52 +00:00:   errno: -98,
+2025-10-01 23:32:52 +00:00:   syscall: 'listen',
+2025-10-01 23:32:52 +00:00:   address: '::',
+2025-10-01 23:32:52 +00:00:   port: 5000
+2025-10-01 23:32:52 +00:00: }
+2025-10-01 23:32:55 +00:00: [31m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:55 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:55 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:55 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:55 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:55 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:55 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:55 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:55 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:55 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:55 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:55 +00:00:   errno: -98,
+2025-10-01 23:32:55 +00:00:   syscall: 'listen',
+2025-10-01 23:32:55 +00:00:   address: '::',
+2025-10-01 23:32:55 +00:00:   port: 5000
+2025-10-01 23:32:55 +00:00: }
+2025-10-01 23:32:59 +00:00: [31m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:59 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:59 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:59 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:59 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:59 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:59 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:59 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:59 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:59 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:59 +00:00:   errno: -98,
+2025-10-01 23:32:59 +00:00:   syscall: 'listen',
+2025-10-01 23:32:59 +00:00:   address: '::',
+2025-10-01 23:32:59 +00:00:   port: 5000
+2025-10-01 23:32:59 +00:00: }
+2025-10-01 23:33:02 +00:00: [31m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:02 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:02 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:02 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:02 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:02 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:02 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:02 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:02 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:02 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:02 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:02 +00:00:   errno: -98,
+2025-10-01 23:33:02 +00:00:   syscall: 'listen',
+2025-10-01 23:33:02 +00:00:   address: '::',
+2025-10-01 23:33:02 +00:00:   port: 5000
+2025-10-01 23:33:02 +00:00: }
+2025-10-01 23:33:05 +00:00: [31m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:05 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:05 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:05 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:05 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:05 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:05 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:05 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:05 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:05 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:05 +00:00:   errno: -98,
+2025-10-01 23:33:05 +00:00:   syscall: 'listen',
+2025-10-01 23:33:05 +00:00:   address: '::',
+2025-10-01 23:33:05 +00:00:   port: 5000
+2025-10-01 23:33:05 +00:00: }
+2025-10-01 23:33:08 +00:00: [31m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:08 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:08 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:08 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:08 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:08 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:08 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:08 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:08 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:08 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:08 +00:00:   errno: -98,
+2025-10-01 23:33:08 +00:00:   syscall: 'listen',
+2025-10-01 23:33:08 +00:00:   address: '::',
+2025-10-01 23:33:08 +00:00:   port: 5000
+2025-10-01 23:33:08 +00:00: }
+2025-10-01 23:33:11 +00:00: [31m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:11 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:11 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:11 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:11 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:11 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:11 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:11 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:11 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:11 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:11 +00:00:   errno: -98,
+2025-10-01 23:33:11 +00:00:   syscall: 'listen',
+2025-10-01 23:33:11 +00:00:   address: '::',
+2025-10-01 23:33:11 +00:00:   port: 5000
+2025-10-01 23:33:11 +00:00: }
+2025-10-01 23:33:14 +00:00: [31m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:14 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:14 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:14 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:14 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:14 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:14 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:14 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:14 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:14 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:14 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:14 +00:00:   errno: -98,
+2025-10-01 23:33:14 +00:00:   syscall: 'listen',
+2025-10-01 23:33:14 +00:00:   address: '::',
+2025-10-01 23:33:14 +00:00:   port: 5000
+2025-10-01 23:33:14 +00:00: }
+2025-10-01 23:33:17 +00:00: [31m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +4ms[39m
+2025-10-01 23:33:17 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:17 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:17 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:17 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:17 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:17 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:17 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:17 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:17 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:17 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:17 +00:00:   errno: -98,
+2025-10-01 23:33:17 +00:00:   syscall: 'listen',
+2025-10-01 23:33:17 +00:00:   address: '::',
+2025-10-01 23:33:17 +00:00:   port: 5000
+2025-10-01 23:33:17 +00:00: }

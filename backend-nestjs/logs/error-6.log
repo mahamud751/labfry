@@ -1,0 +1,90 @@
+2025-10-01 22:23:26 +00:00: [31m[Nest] 2775923  - [39m10/01/2025, 10:23:26 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +4ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 22:24:10 +00:00: [31m[Nest] 2776622  - [39m10/01/2025, 10:24:10 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +3ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 22:37:14 +00:00: [31m[Nest] 2783675  - [39m10/01/2025, 10:37:14 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +3ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:10:24 +00:00: [31m[Nest] 2791910  - [39m10/01/2025, 11:10:24 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +2ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:12:54 +00:00: [31m[Nest] 2792466  - [39m10/01/2025, 11:12:54 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +2ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:16:27 +00:00: [31m[Nest] 2793463  - [39m10/01/2025, 11:16:27 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +3ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:26:49 +00:00: [31m[Nest] 2795311  - [39m10/01/2025, 11:26:49 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +2ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:31:31 +00:00: [31m[Nest] 2796524  - [39m10/01/2025, 11:31:31 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +2ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-10-01 23:32:21 +00:00: [31m[Nest] 2796984  - [39m10/01/2025, 11:32:21 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: bind EADDRINUSE null:5000[39m[38;5;3m +3ms[39m
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: bind EADDRINUSE null:5000
+    at listenOnPrimaryHandle (node:net:2020:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:530:35)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)

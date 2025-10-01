@@ -1,0 +1,788 @@
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +12ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +8ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +27ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:49 +00:00: ✅ Database connected successfully
+2025-10-01 23:32:49 +00:00: [32m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +39ms[39m
+2025-10-01 23:32:49 +00:00: [31m[Nest] 2797167  - [39m10/01/2025, 11:32:49 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:49 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:49 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:49 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:49 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:49 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:49 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:49 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:49 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:49 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:49 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:49 +00:00:   errno: -98,
+2025-10-01 23:32:49 +00:00:   syscall: 'listen',
+2025-10-01 23:32:49 +00:00:   address: '::',
+2025-10-01 23:32:49 +00:00:   port: 5000
+2025-10-01 23:32:49 +00:00: }
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +13ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +8ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +25ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:52 +00:00: ✅ Database connected successfully
+2025-10-01 23:32:52 +00:00: [32m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +23ms[39m
+2025-10-01 23:32:52 +00:00: [31m[Nest] 2797242  - [39m10/01/2025, 11:32:52 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:52 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:52 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:52 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:52 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:52 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:52 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:52 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:52 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:52 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:52 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:52 +00:00:   errno: -98,
+2025-10-01 23:32:52 +00:00:   syscall: 'listen',
+2025-10-01 23:32:52 +00:00:   address: '::',
+2025-10-01 23:32:52 +00:00:   port: 5000
+2025-10-01 23:32:52 +00:00: }
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +14ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +9ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +29ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:55 +00:00: ✅ Database connected successfully
+2025-10-01 23:32:55 +00:00: [32m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +13ms[39m
+2025-10-01 23:32:55 +00:00: [31m[Nest] 2797271  - [39m10/01/2025, 11:32:55 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:55 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:55 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:55 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:55 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:55 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:55 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:55 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:55 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:55 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:55 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:55 +00:00:   errno: -98,
+2025-10-01 23:32:55 +00:00:   syscall: 'listen',
+2025-10-01 23:32:55 +00:00:   address: '::',
+2025-10-01 23:32:55 +00:00:   port: 5000
+2025-10-01 23:32:55 +00:00: }
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +9ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +31ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:32:59 +00:00: ✅ Database connected successfully
+2025-10-01 23:32:59 +00:00: [32m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +12ms[39m
+2025-10-01 23:32:59 +00:00: [31m[Nest] 2797335  - [39m10/01/2025, 11:32:59 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:32:59 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:32:59 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:32:59 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:32:59 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:32:59 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:32:59 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:32:59 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:32:59 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:32:59 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:32:59 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:32:59 +00:00:   errno: -98,
+2025-10-01 23:32:59 +00:00:   syscall: 'listen',
+2025-10-01 23:32:59 +00:00:   address: '::',
+2025-10-01 23:32:59 +00:00:   port: 5000
+2025-10-01 23:32:59 +00:00: }
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +14ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +26ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:02 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:02 +00:00: [32m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +25ms[39m
+2025-10-01 23:33:02 +00:00: [31m[Nest] 2797365  - [39m10/01/2025, 11:33:02 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:02 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:02 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:02 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:02 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:02 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:02 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:02 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:02 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:02 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:02 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:02 +00:00:   errno: -98,
+2025-10-01 23:33:02 +00:00:   syscall: 'listen',
+2025-10-01 23:33:02 +00:00:   address: '::',
+2025-10-01 23:33:02 +00:00:   port: 5000
+2025-10-01 23:33:02 +00:00: }
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +13ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +9ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +27ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:05 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:05 +00:00: [32m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +19ms[39m
+2025-10-01 23:33:05 +00:00: [31m[Nest] 2797447  - [39m10/01/2025, 11:33:05 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:05 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:05 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:05 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:05 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:05 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:05 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:05 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:05 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:05 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:05 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:05 +00:00:   errno: -98,
+2025-10-01 23:33:05 +00:00:   syscall: 'listen',
+2025-10-01 23:33:05 +00:00:   address: '::',
+2025-10-01 23:33:05 +00:00:   port: 5000
+2025-10-01 23:33:05 +00:00: }
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +18ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +33ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:08 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:08 +00:00: [32m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +23ms[39m
+2025-10-01 23:33:08 +00:00: [31m[Nest] 2797482  - [39m10/01/2025, 11:33:08 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:08 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:08 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:08 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:08 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:08 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:08 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:08 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:08 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:08 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:08 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:08 +00:00:   errno: -98,
+2025-10-01 23:33:08 +00:00:   syscall: 'listen',
+2025-10-01 23:33:08 +00:00:   address: '::',
+2025-10-01 23:33:08 +00:00:   port: 5000
+2025-10-01 23:33:08 +00:00: }
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +15ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +9ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +33ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:11 +00:00: [32m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +15ms[39m
+2025-10-01 23:33:11 +00:00: [31m[Nest] 2797546  - [39m10/01/2025, 11:33:11 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:11 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:11 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:11 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:11 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:11 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:11 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:11 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:11 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:11 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:11 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:11 +00:00:   errno: -98,
+2025-10-01 23:33:11 +00:00:   syscall: 'listen',
+2025-10-01 23:33:11 +00:00:   address: '::',
+2025-10-01 23:33:11 +00:00:   port: 5000
+2025-10-01 23:33:11 +00:00: }
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +8ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +27ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:14 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:14 +00:00: [32m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +20ms[39m
+2025-10-01 23:33:14 +00:00: [31m[Nest] 2797744  - [39m10/01/2025, 11:33:14 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:14 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:14 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:14 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:14 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:14 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:14 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:14 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:14 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:14 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:14 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:14 +00:00:   errno: -98,
+2025-10-01 23:33:14 +00:00:   syscall: 'listen',
+2025-10-01 23:33:14 +00:00:   address: '::',
+2025-10-01 23:33:14 +00:00:   port: 5000
+2025-10-01 23:33:14 +00:00: }
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +8ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +47ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +3ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +4ms[39m
+2025-10-01 23:33:17 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:17 +00:00: [32m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +37ms[39m
+2025-10-01 23:33:17 +00:00: [31m[Nest] 2797827  - [39m10/01/2025, 11:33:17 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::5000[39m[38;5;3m +4ms[39m
+2025-10-01 23:33:17 +00:00: Error: listen EADDRINUSE: address already in use :::5000
+2025-10-01 23:33:17 +00:00:     at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+2025-10-01 23:33:17 +00:00:     at listenInCluster (node:net:1996:12)
+2025-10-01 23:33:17 +00:00:     at Server.listen (node:net:2101:7)
+2025-10-01 23:33:17 +00:00:     at ExpressAdapter.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/platform-express/adapters/express-adapter.js:95:32)
+2025-10-01 23:33:17 +00:00:     at /root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:183:30
+2025-10-01 23:33:17 +00:00:     at new Promise (<anonymous>)
+2025-10-01 23:33:17 +00:00:     at NestApplication.listen (/root/labfry/backend-nestjs/node_modules/@nestjs/core/nest-application.js:173:16)
+2025-10-01 23:33:17 +00:00:     at async bootstrap (/root/labfry/backend-nestjs/dist/main.js:2974:5) {
+2025-10-01 23:33:17 +00:00:   code: 'EADDRINUSE',
+2025-10-01 23:33:17 +00:00:   errno: -98,
+2025-10-01 23:33:17 +00:00:   syscall: 'listen',
+2025-10-01 23:33:17 +00:00:   address: '::',
+2025-10-01 23:33:17 +00:00:   port: 5000
+2025-10-01 23:33:17 +00:00: }
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +7ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +30ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:33:58 +00:00: ✅ Database connected successfully
+2025-10-01 23:33:58 +00:00: [32m[Nest] 2798069  - [39m10/01/2025, 11:33:58 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +43ms[39m
+2025-10-01 23:33:58 +00:00: 🚀 Labfry NestJS Backend Started
+2025-10-01 23:33:58 +00:00: 📍 Server: http://localhost:5000
+2025-10-01 23:33:58 +00:00: 📚 API Docs: http://localhost:5000/api/docs
+2025-10-01 23:33:58 +00:00: 🔍 Health Check: http://localhost:5000/api/health
+2025-10-01 23:34:06 +00:00: 🔌 New socket connection: D6pACZmI_AQ7w2XWAAAB
+2025-10-01 23:34:08 +00:00: 🔌 New socket connection: ERm7SpgnRrx-yPxxAAAD
+2025-10-01 23:34:24 +00:00: 🔌 Socket disconnected: ERm7SpgnRrx-yPxxAAAD
+2025-10-01 23:34:24 +00:00: 🔌 New socket connection: EeWztCmVcLpk2268AAAF
+2025-10-01 23:34:36 +00:00: ⏰ Disconnecting unauthenticated client: D6pACZmI_AQ7w2XWAAAB
+2025-10-01 23:34:36 +00:00: 🔌 Socket disconnected: D6pACZmI_AQ7w2XWAAAB
+2025-10-01 23:34:39 +00:00: 🔌 New socket connection: JCM8-HbVpkoXOzQDAAAH
+2025-10-01 23:34:54 +00:00: ⏰ Disconnecting unauthenticated client: EeWztCmVcLpk2268AAAF
+2025-10-01 23:34:54 +00:00: 🔌 Socket disconnected: EeWztCmVcLpk2268AAAF
+2025-10-01 23:34:56 +00:00: 🔌 New socket connection: N8mw2Ml8CK78r6L5AAAJ
+2025-10-01 23:35:09 +00:00: ⏰ Disconnecting unauthenticated client: JCM8-HbVpkoXOzQDAAAH
+2025-10-01 23:35:09 +00:00: 🔌 Socket disconnected: JCM8-HbVpkoXOzQDAAAH
+2025-10-01 23:35:12 +00:00: 🔌 New socket connection: oIODHz2Xe506Jwv7AAAL
+2025-10-01 23:35:26 +00:00: ⏰ Disconnecting unauthenticated client: N8mw2Ml8CK78r6L5AAAJ
+2025-10-01 23:35:26 +00:00: 🔌 Socket disconnected: N8mw2Ml8CK78r6L5AAAJ
+2025-10-01 23:35:29 +00:00: 🔌 New socket connection: TlnXZ9d_CSBS_vM0AAAN
+2025-10-01 23:35:30 +00:00: 🔌 Socket disconnected: TlnXZ9d_CSBS_vM0AAAN
+2025-10-01 23:35:30 +00:00: 🔌 New socket connection: n4NXj-kPrOP-aSxzAAAP
+2025-10-01 23:35:42 +00:00: ⏰ Disconnecting unauthenticated client: oIODHz2Xe506Jwv7AAAL
+2025-10-01 23:35:42 +00:00: 🔌 Socket disconnected: oIODHz2Xe506Jwv7AAAL
+2025-10-01 23:35:45 +00:00: 🔌 New socket connection: 3Wsc5af74_8F2aBBAAAR
+2025-10-01 23:36:00 +00:00: ⏰ Disconnecting unauthenticated client: n4NXj-kPrOP-aSxzAAAP
+2025-10-01 23:36:00 +00:00: 🔌 Socket disconnected: n4NXj-kPrOP-aSxzAAAP
+2025-10-01 23:36:03 +00:00: 🔌 New socket connection: XTyyMMzxQQtHBH-LAAAT
+2025-10-01 23:36:15 +00:00: ⏰ Disconnecting unauthenticated client: 3Wsc5af74_8F2aBBAAAR
+2025-10-01 23:36:15 +00:00: 🔌 Socket disconnected: 3Wsc5af74_8F2aBBAAAR
+2025-10-01 23:36:18 +00:00: 🔌 New socket connection: IqGbzE7TtSvXs6nsAAAV
+2025-10-01 23:36:33 +00:00: ⏰ Disconnecting unauthenticated client: XTyyMMzxQQtHBH-LAAAT
+2025-10-01 23:36:33 +00:00: 🔌 Socket disconnected: XTyyMMzxQQtHBH-LAAAT
+2025-10-01 23:36:35 +00:00: 🔌 New socket connection: dBjyb6-nmcx55BxEAAAX
+2025-10-01 23:36:48 +00:00: ⏰ Disconnecting unauthenticated client: IqGbzE7TtSvXs6nsAAAV
+2025-10-01 23:36:48 +00:00: 🔌 Socket disconnected: IqGbzE7TtSvXs6nsAAAV
+2025-10-01 23:36:51 +00:00: 🔌 New socket connection: TcR8s4e6_M-iO2PKAAAZ
+2025-10-01 23:37:05 +00:00: ⏰ Disconnecting unauthenticated client: dBjyb6-nmcx55BxEAAAX
+2025-10-01 23:37:05 +00:00: 🔌 Socket disconnected: dBjyb6-nmcx55BxEAAAX
+2025-10-01 23:37:07 +00:00: 🔌 New socket connection: H8XzMia1d1nJ-Y3oAAAb
+2025-10-01 23:37:21 +00:00: ⏰ Disconnecting unauthenticated client: TcR8s4e6_M-iO2PKAAAZ
+2025-10-01 23:37:21 +00:00: 🔌 Socket disconnected: TcR8s4e6_M-iO2PKAAAZ
+2025-10-01 23:37:24 +00:00: 🔌 New socket connection: HiucjGzJh1J2tYllAAAd
+2025-10-01 23:37:37 +00:00: ⏰ Disconnecting unauthenticated client: H8XzMia1d1nJ-Y3oAAAb
+2025-10-01 23:37:37 +00:00: 🔌 Socket disconnected: H8XzMia1d1nJ-Y3oAAAb
+2025-10-01 23:37:40 +00:00: 🔌 New socket connection: wd049qf-OSTbdxPzAAAf
+2025-10-01 23:37:51 +00:00: 🔌 Socket disconnected: wd049qf-OSTbdxPzAAAf
+2025-10-01 23:37:51 +00:00: 🔌 New socket connection: hau7OxpZPLoG-vEzAAAh
+2025-10-01 23:37:54 +00:00: ⏰ Disconnecting unauthenticated client: HiucjGzJh1J2tYllAAAd
+2025-10-01 23:37:54 +00:00: 🔌 Socket disconnected: HiucjGzJh1J2tYllAAAd
+2025-10-01 23:37:57 +00:00: 🔌 New socket connection: ZOQ9F-wHRyZYbhsCAAAj
+2025-10-01 23:38:21 +00:00: ⏰ Disconnecting unauthenticated client: hau7OxpZPLoG-vEzAAAh
+2025-10-01 23:38:21 +00:00: 🔌 Socket disconnected: hau7OxpZPLoG-vEzAAAh
+2025-10-01 23:38:24 +00:00: 🔌 New socket connection: V7nPq31ICnqicy1KAAAl
+2025-10-01 23:38:27 +00:00: ⏰ Disconnecting unauthenticated client: ZOQ9F-wHRyZYbhsCAAAj
+2025-10-01 23:38:27 +00:00: 🔌 Socket disconnected: ZOQ9F-wHRyZYbhsCAAAj
+2025-10-01 23:38:30 +00:00: 🔌 New socket connection: fwvS7H-WVn73VGW5AAAn
+2025-10-01 23:38:54 +00:00: ⏰ Disconnecting unauthenticated client: V7nPq31ICnqicy1KAAAl
+2025-10-01 23:38:54 +00:00: 🔌 Socket disconnected: V7nPq31ICnqicy1KAAAl
+2025-10-01 23:38:56 +00:00: 🔌 New socket connection: 9r_-OdormLRz9X17AAAp
+2025-10-01 23:39:00 +00:00: ⏰ Disconnecting unauthenticated client: fwvS7H-WVn73VGW5AAAn
+2025-10-01 23:39:00 +00:00: 🔌 Socket disconnected: fwvS7H-WVn73VGW5AAAn
+2025-10-01 23:39:03 +00:00: 🔌 New socket connection: GHMuqVlT_CzZxORUAAAr
+2025-10-01 23:39:26 +00:00: ⏰ Disconnecting unauthenticated client: 9r_-OdormLRz9X17AAAp
+2025-10-01 23:39:26 +00:00: 🔌 Socket disconnected: 9r_-OdormLRz9X17AAAp
+2025-10-01 23:39:33 +00:00: ⏰ Disconnecting unauthenticated client: GHMuqVlT_CzZxORUAAAr
+2025-10-01 23:39:33 +00:00: 🔌 Socket disconnected: GHMuqVlT_CzZxORUAAAr
+2025-10-01 23:39:53 +00:00: 🔌 New socket connection: ORV46McRbU2Xda3wAAAt
+2025-10-01 23:40:23 +00:00: ⏰ Disconnecting unauthenticated client: ORV46McRbU2Xda3wAAAt
+2025-10-01 23:40:23 +00:00: 🔌 Socket disconnected: ORV46McRbU2Xda3wAAAt
+2025-10-01 23:40:26 +00:00: 🔌 New socket connection: _AjAdglBUAN6Dp4JAAAv
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +9ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +34ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:40:39 +00:00: ✅ Database connected successfully
+2025-10-01 23:40:39 +00:00: [32m[Nest] 2802629  - [39m10/01/2025, 11:40:39 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +101ms[39m
+2025-10-01 23:40:39 +00:00: 🚀 Labfry NestJS Backend Started
+2025-10-01 23:40:39 +00:00: 📍 Server: http://localhost:5000
+2025-10-01 23:40:39 +00:00: 📚 API Docs: http://localhost:5000/api/docs
+2025-10-01 23:40:39 +00:00: 🔍 Health Check: http://localhost:5000/api/health
+2025-10-01 23:41:05 +00:00: 🔌 New socket connection: Afq1-Xk0yMv12f_dAAAB
+2025-10-01 23:41:07 +00:00: 🔌 Socket disconnected: Afq1-Xk0yMv12f_dAAAB
+2025-10-01 23:41:08 +00:00: 🔌 New socket connection: b_7ddziaw0BFOXkYAAAE
+2025-10-01 23:41:31 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:41:38 +00:00: ⏰ Disconnecting unauthenticated client: b_7ddziaw0BFOXkYAAAE
+2025-10-01 23:41:38 +00:00: 🔌 Socket disconnected: b_7ddziaw0BFOXkYAAAE
+2025-10-01 23:42:16 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:43:05 +00:00: 🔌 New socket connection: j7oJZMjMU-OgQZcsAAAH
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +12ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +8ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +29ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:10 +00:00: ✅ Database connected successfully
+2025-10-01 23:43:10 +00:00: [32m[Nest] 2803995  - [39m10/01/2025, 11:43:10 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +33ms[39m
+2025-10-01 23:43:10 +00:00: 🚀 Labfry NestJS Backend Started
+2025-10-01 23:43:10 +00:00: 📍 Server: http://localhost:5000
+2025-10-01 23:43:10 +00:00: 📚 API Docs: http://localhost:5000/api/docs
+2025-10-01 23:43:10 +00:00: 🔍 Health Check: http://localhost:5000/api/health
+2025-10-01 23:43:10 +00:00: 🔌 New socket connection: V6slxPiNm2Vdc_DqAAAB
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +17ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebSocketModule dependencies initialized[39m[38;5;3m +11ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "authenticate" message[39m[38;5;3m +24ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "update_online_status" message[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "get_online_users" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_start" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[WebSocketsController] [39m[32mSocketGateway subscribed to the "typing_stop" message[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/verify-email, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/refresh, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/logout, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/profile, PUT} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/online-status, PUT} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/resend-verification, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/admin/reset-password, POST} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/email-health, GET} route[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/api/health}:[39m[38;5;3m +0ms[39m
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/health, GET} route[39m[38;5;3m +1ms[39m
+2025-10-01 23:43:21 +00:00: ✅ Database connected successfully
+2025-10-01 23:43:21 +00:00: [32m[Nest] 2804284  - [39m10/01/2025, 11:43:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +19ms[39m
+2025-10-01 23:43:21 +00:00: 🚀 Labfry NestJS Backend Started
+2025-10-01 23:43:21 +00:00: 📍 Server: http://localhost:5000
+2025-10-01 23:43:21 +00:00: 📚 API Docs: http://localhost:5000/api/docs
+2025-10-01 23:43:21 +00:00: 🔍 Health Check: http://localhost:5000/api/health
+2025-10-01 23:43:58 +00:00: 🔌 New socket connection: oMypKPIlM1JSXnNXAAAB
+2025-10-01 23:44:03 +00:00: 🔌 New socket connection: YgDVfQOX6C44zSh9AAAE
+2025-10-01 23:44:28 +00:00: ⏰ Disconnecting unauthenticated client: oMypKPIlM1JSXnNXAAAB
+2025-10-01 23:44:28 +00:00: 🔌 Socket disconnected: oMypKPIlM1JSXnNXAAAB
+2025-10-01 23:44:31 +00:00: 🔌 New socket connection: ftziLsJyy5l9q_ojAAAG
+2025-10-01 23:44:33 +00:00: ⏰ Disconnecting unauthenticated client: YgDVfQOX6C44zSh9AAAE
+2025-10-01 23:44:33 +00:00: 🔌 Socket disconnected: YgDVfQOX6C44zSh9AAAE
+2025-10-01 23:45:01 +00:00: ⏰ Disconnecting unauthenticated client: ftziLsJyy5l9q_ojAAAG
+2025-10-01 23:45:01 +00:00: 🔌 Socket disconnected: ftziLsJyy5l9q_ojAAAG
+2025-10-01 23:45:03 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:45:36 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:46:10 +00:00: 🔌 New socket connection: n7ko1pZ-XbhFZFAPAAAJ
+2025-10-01 23:46:40 +00:00: ⏰ Disconnecting unauthenticated client: n7ko1pZ-XbhFZFAPAAAJ
+2025-10-01 23:46:40 +00:00: 🔌 Socket disconnected: n7ko1pZ-XbhFZFAPAAAJ
+2025-10-01 23:47:06 +00:00: 🔌 New socket connection: gn1ixbr8uq5oNbA_AAAL
+2025-10-01 23:47:36 +00:00: ⏰ Disconnecting unauthenticated client: gn1ixbr8uq5oNbA_AAAL
+2025-10-01 23:47:36 +00:00: 🔌 Socket disconnected: gn1ixbr8uq5oNbA_AAAL
+2025-10-01 23:48:01 +00:00: 🔌 New socket connection: ZOiMYLfph2IFJrlCAAAO
+2025-10-01 23:48:31 +00:00: ⏰ Disconnecting unauthenticated client: ZOiMYLfph2IFJrlCAAAO
+2025-10-01 23:48:31 +00:00: 🔌 Socket disconnected: ZOiMYLfph2IFJrlCAAAO
+2025-10-01 23:48:45 +00:00: 🔌 New socket connection: ZnTxqP5v2leRyiL8AAAQ
+2025-10-01 23:49:15 +00:00: ⏰ Disconnecting unauthenticated client: ZnTxqP5v2leRyiL8AAAQ
+2025-10-01 23:49:15 +00:00: 🔌 Socket disconnected: ZnTxqP5v2leRyiL8AAAQ
+2025-10-01 23:49:30 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:49:41 +00:00: 🔌 New socket connection: pMhHCrOw-e6BOKPlAAAS
+2025-10-01 23:49:56 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:11 +00:00: ⏰ Disconnecting unauthenticated client: pMhHCrOw-e6BOKPlAAAS
+2025-10-01 23:50:11 +00:00: 🔌 Socket disconnected: pMhHCrOw-e6BOKPlAAAS
+2025-10-01 23:50:12 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:55 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:56 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:50:57 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:07 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:32 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:32 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:35 +00:00: ✅ Email verification sent to: aminul@gmail.com
+2025-10-01 23:51:35 +00:00: 📧 Email service: sandbox.smtp.mailtrap.io:2525
+2025-10-01 23:51:35 +00:00: 📤 From: crazysolve99@gmail.com
+2025-10-01 23:51:51 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:51 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:54 +00:00: ✅ Welcome email sent to: aminul@gmail.com
+2025-10-01 23:51:58 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:58 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:59 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:51:59 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:01 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:01 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:07 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:07 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:10 +00:00: ✅ Password reset email sent to: aminul@gmail.com
+2025-10-01 23:52:10 +00:00: 📧 Email service: sandbox.smtp.mailtrap.io:2525
+2025-10-01 23:52:10 +00:00: 📤 From: crazysolve99@gmail.com
+2025-10-01 23:52:26 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:26 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:34 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:34 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:34 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:34 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:34 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:35 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:35 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:35 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:35 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:35 +00:00: 🔌 New socket connection: CB_nONneUE3_rdr-AAAX
+2025-10-01 23:52:40 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:40 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:41 +00:00: ✅ User authenticated: Alma Bruce (68ddbe84988ab4396cb3405a)
+2025-10-01 23:52:41 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:41 +00:00: 🌐 CORS Origin Request: https://labfry.pino7.com
+2025-10-01 23:52:54 +00:00: 🔌 New socket connection: xHBQg5TK9k4mHIWNAAAZ
+2025-10-01 23:53:24 +00:00: ⏰ Disconnecting unauthenticated client: xHBQg5TK9k4mHIWNAAAZ
+2025-10-01 23:53:24 +00:00: 🔌 Socket disconnected: xHBQg5TK9k4mHIWNAAAZ
+2025-10-01 23:53:27 +00:00: 🔌 New socket connection: usUTdGGLKGkXJztRAAAb
+2025-10-01 23:53:57 +00:00: ⏰ Disconnecting unauthenticated client: usUTdGGLKGkXJztRAAAb
+2025-10-01 23:53:57 +00:00: 🔌 Socket disconnected: usUTdGGLKGkXJztRAAAb
+2025-10-01 23:54:00 +00:00: 🔌 New socket connection: E9XXKa1eaVpNj2BOAAAd
+2025-10-01 23:54:30 +00:00: ⏰ Disconnecting unauthenticated client: E9XXKa1eaVpNj2BOAAAd
+2025-10-01 23:54:30 +00:00: 🔌 Socket disconnected: E9XXKa1eaVpNj2BOAAAd
+2025-10-01 23:54:33 +00:00: 🔌 New socket connection: 5ZBn857luBGoSt3FAAAf
+2025-10-01 23:55:03 +00:00: ⏰ Disconnecting unauthenticated client: 5ZBn857luBGoSt3FAAAf
+2025-10-01 23:55:03 +00:00: 🔌 Socket disconnected: 5ZBn857luBGoSt3FAAAf
+2025-10-01 23:55:06 +00:00: 🔌 New socket connection: jyuT_6ssbg2jxTbDAAAh
